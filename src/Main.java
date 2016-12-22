@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "G:\\download\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
