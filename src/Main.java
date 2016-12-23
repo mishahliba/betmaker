@@ -34,5 +34,12 @@ public class Main {
         System.out.println(driver.findElement(By.name("passwd")).getText());
         driver.findElement(By.xpath("//*[@id=\"z_content\"]/div/div/form/table/tbody/tr[3]/td[3]/button[1]")).click();
 
+        //TODO This shit is not working now
+        //driver.findElement(By.name("username")).click();
+
+        driver.findElement(By.linkText("Теннис")).click();
+        driver.findElement(By.className("groups"));
+        driver.findElement(By.linkText("Мужчины. Australian Open 2017. Итоги турнира")).click();
+        driver.get("https://www.parimatch.com/sport/tennis/muzhchiny-australian-open-2017-itogi-turnira");
     }
 }
